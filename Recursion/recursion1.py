@@ -8,6 +8,8 @@
 
 #recusrion that calculates the factorial of a number
 
+#the factorial of a number is the product of all the numbers from 1 to that number
+#the function "factorial" takes a single argument n and returns the factorial of "n" . The fucntion has a base case where it returns 1 if n is 0. If n is not 0, the function makes a recursive call to factorial(n-1) and multiplies it by n
 def factorial(n):
     #base case : the factorial of 0 is 1
     if n == 0:
