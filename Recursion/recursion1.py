@@ -10,6 +10,8 @@
 
 #the factorial of a number is the product of all the numbers from 1 to that number
 #the function "factorial" takes a single argument n and returns the factorial of "n" . The fucntion has a base case where it returns 1 if n is 0. If n is not 0, the function makes a recursive call to factorial(n-1) and multiplies it by n
+
+#this way, the function keeps calling itself with the value of n-1 until the base case is reached, that is n=0. Each time the function calls itelf, it performs a smaller version of the same problem, to calculate factrial of n-1 abd keeps track if the intermediate result, which will be multiplied by n to get the final result.
 def factorial(n):
     #base case : the factorial of 0 is 1
     if n == 0:
