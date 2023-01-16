@@ -12,8 +12,32 @@ class Node:
         #  Similarly, in the print_tree method, self is used to refer to the current instance of the class and access its attributes such as value, left, and right.
         
         #In python, self is used as a way to refer to the instance of a class, this is why it's not necessary to pass it as an explicit argument. It is automatically passed by Python when a method is called on an instance of a class.
+        
         self.value = value
         self.value = left
         self.value = right
+        #the above lines set the value of the instance variable of the object. 
+        
+        def print_tree(node):
+            #this line defines a function 'print_tree' which takes a single argument node which is the current node that is being traversed.
+            
+            if Node is None:
+                return
+            #this line checks if the current node is None. If it is, the function returns without printing anything. iT SERVES AS THE BASE CASE FOR RECURSION where the recursion stops. 
+            print(node.value)
+            
+            print_tree(node.left)
+            print_tree(node.right)
+            
+            # these lines make the recursive call to the function, first with the left child node and then with the right child node. This way the function keeps traversing the tree, visiting each node exactly once
+            
+            
+            #create a simple tree
+            root = Node(1, Node(2, Node(4), Node(5)), Node(3, Node(6), Node(7)))
+            
+            #This line creates an instance of the Node class to create a sample tree. The tree has a root node with value 1, which has left child node with value 2 and right child node with value 3. The left child node has left child node with value 4 and right child node with value 5. Similarly, the right child node has left child node with value 6 and right child node with value 7.
+            
+            #print the tree
+            print_tree(root)
         
         
