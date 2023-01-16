@@ -6,3 +6,10 @@ Memory - Recursive function uses the call stack to keep track of the state of re
 Readability: Recursive functions are often more elegant and easier to understand, especially for problems that have a recursive solution, such as traversing a tree. However, some people may find iterative functions easier to understand, especially for problems that have a iterative solution.
 
 Performance: Recursive functions can be slower than iterative functions, as they make multiple function calls, each of which takes up some overhead. Additionally, the use of the call stack can also add overhead. Iterative functions are generally faster and more efficient as they only perform a set of instructions repeatedly.
+
+when to use recursion
+
+-When we can easily break down a problem into subproblems
+-When we are fine with extra overhead(both time and space that comes with it)
+-When we need a quick working solution instead of an efficient one
+-When we traverse a tree. 
