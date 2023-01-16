@@ -12,3 +12,8 @@ class Node:
         #  Similarly, in the print_tree method, self is used to refer to the current instance of the class and access its attributes such as value, left, and right.
         
         #In python, self is used as a way to refer to the instance of a class, this is why it's not necessary to pass it as an explicit argument. It is automatically passed by Python when a method is called on an instance of a class.
+        self.value = value
+        self.value = left
+        self.value = right
+        
+        
