@@ -1,0 +1,5 @@
+#a common usecase  for recusriion is traversing and manipulating tree-like data structures. Here is an example of a recursive function that traverses a tree and prints the value of each node in the tree.
+
+class Node:
+    def __init__(self, value, left = None, right= None):
+        #the above line defines a class 'node' and a method '__init__' that takes three arguments of vaue, left and right. the left and right arguments are optional and default to None. 'value' is the value of the node, 'left' is a reference of the left child node and 'right' is a reference to the right child node. 
