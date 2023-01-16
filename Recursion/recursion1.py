@@ -3,3 +3,20 @@
 
 #base case
 #recursive case
+
+#the function must always make a progress towards the base case in each recursive call.
+
+#recusrion that calculates the factorial of a number
+
+def factorial(n):
+    #base case : the factorial of 0 is 1
+    if n == 0:
+        return 1
+    
+    #recursive case: th factorial of n is the n* the factorial of (n-1)
+    else:
+        return n * factorial(n-1)
+    
+#test the fuction 
+print(factorial(5))
+#it prints 120
