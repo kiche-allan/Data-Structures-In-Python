@@ -3,3 +3,5 @@
 class Node:
     def __init__(self, value, left = None, right= None):
         #the above line defines a class 'node' and a method '__init__' that takes three arguments of vaue, left and right. the left and right arguments are optional and default to None. 'value' is the value of the node, 'left' is a reference of the left child node and 'right' is a reference to the right child node. 
+        
+        #self is not an explicit argument in the above code because it is automatically passed by Python to a method when it is called on an instance of a class. 
