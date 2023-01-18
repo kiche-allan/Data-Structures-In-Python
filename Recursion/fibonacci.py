@@ -38,7 +38,7 @@ for i in range(10):
             # Recursive case: the nth Fibonacci number is the sum of the (n-1)th and (n-2)th Fibonacci numbers
         else:
             return fibonacci(n-1) + fibonacci(n-2)
-        
+        #the above line defines a recursive case. when n is greater than 1, the function calls itself twice, once with n-1 and once with n-2, 
 
         
 
