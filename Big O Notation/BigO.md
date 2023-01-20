@@ -36,3 +36,11 @@ def constant_algorithm(arr):
 This algorithm is a binary search algorithm which reduces the range of the search by half each time, so the number of operations it performs is proportional to log(n)
 
 It's important to note that Big O notation describes the worst-case scenario, and that some algorithms may have a different time complexity depending on the input.
+
+Big 0 is the language and metric used to describe the efficiency of algorithms
+
+
+Algorithm run time notations
+- Best case
+- Average Case
+- Worst case
