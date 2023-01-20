@@ -5,7 +5,10 @@
 
 def find_max(arr):
     max_val = arr[0]
-    for i in range(1 len(arr))
+    for i in range(1, len(arr)):
         if arr[i] > max_val:
             max_val = arr[i]
     return max_val
+
+# In this example, the time complexity of the function is O(n) because the time it takes to execute the function increases linearly with the size of the input array. This is because we are iterating through the array once and in each iteration we are comparing the current element with the current maximum value. We can also express the time complexity using Theta notation as Θ(n), which means that the function will always run in linear time.
+
