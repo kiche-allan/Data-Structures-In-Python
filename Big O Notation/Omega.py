@@ -1,0 +1,1 @@
+# Omega notation describes the best-case scenario in terms of the number of basic operations that an algorithm needs to perform in order to solve a problem of a certain size. aIts the opposite of big o notation
