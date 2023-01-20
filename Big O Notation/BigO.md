@@ -32,3 +32,7 @@ def constant_algorithm(arr):
             else:
                 high = mid -1
         return -1
+
+This algorithm is a binary search algorithm which reduces the range of the search by half each time, so the number of operations it performs is proportional to log(n)
+
+It's important to note that Big O notation describes the worst-case scenario, and that some algorithms may have a different time complexity depending on the input.
