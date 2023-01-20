@@ -44,3 +44,7 @@ Algorithm run time notations
 - Best case
 - Average Case
 - Worst case
+
+- Big O - Its a complexity that is going to be less or equal to the worst case
+- Big Omega - It is a complexity that is going to be atleast more than the best case
+- Big Theta- Complexity that occur within the boundaries of the worst and the best cases
