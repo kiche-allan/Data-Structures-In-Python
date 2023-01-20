@@ -1,0 +1,1 @@
+Big O is a way to measure to measure the complexity of the algorithm. It describes the worst case scenario, in terms of number of baic operations such as additions, multiplications, comparisons e.tc. that an algorithm needs to perform in ordr to solve a problem of a certain size.
