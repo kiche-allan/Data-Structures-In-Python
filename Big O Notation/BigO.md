@@ -48,3 +48,11 @@ Algorithm run time notations
 - Big O - Its a complexity that is going to be less or equal to the worst case
 - Big Omega - It is a complexity that is going to be atleast more than the best case
 - Big Theta- Complexity that occur within the boundaries of the worst and the best cases
+
+Algorithm run time complexities
+Complexity              -------Name ---------                 -Sample
+0(1)        --------- Constant - -------           -----Accessing a specific element in the array
+0(N)           -------Linear --------              -----Loop through the array elements
+0(Log N)       -------Logarithmic-----             -----Find an element in sorted array
+0(N^2)          ------Quadratic-------              ----Looking at every index in the array twice
+0(2^N)          ------Exponential------             ----Double recursion in Fibonacci
