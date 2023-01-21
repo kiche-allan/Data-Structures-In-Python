@@ -1,1 +1,1 @@
-In the contaext 
+In the contaext of time complexity analysis dropping constants and ignoring non dorminant terms refer to simplifying the mathematical expression that describes the running time of an algorithm by removing certain terms or factors that do not have significant impact on the overall growth of the running time.
