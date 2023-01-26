@@ -26,3 +26,6 @@ print(len(grades[0]))
 # get the number of columns in the array
 
 print(len(grades[0][0]))
+
+
+# In this example, we first declare and initialize a three-dimensional array named "grades" with the grades of students in multiple classes. Each innermost array represents the grades of a student, each middle array represents the class, and the outermost array represents the number of classes. We then use the square brackets notation to access and manipulate the elements in the array. We can use the print statement to display the entire array, a specific element in the array, the number of layers, rows, and columns in the array.
