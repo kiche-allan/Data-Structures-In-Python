@@ -1,0 +1,1 @@
+arrays is a data structure that stores collection of items typically of the same type/ The items are stored in a contigous block of memory and each memory and item can be accessed by its index
