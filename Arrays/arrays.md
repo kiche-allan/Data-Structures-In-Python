@@ -1,1 +1,3 @@
 arrays is a data structure that stores collection of items typically of the same type/ The items are stored in a contigous block of memory and each memory and item can be accessed by its index
+
+They are useful for tasks such as storing collection of data, such as list of intergers or a list of names. In most languages, arrays have a fixed size meaning the number of elements they can store is determined when they are created and cannot be changed later
