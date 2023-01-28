@@ -13,7 +13,7 @@ class Solution:
         A, B = nums1, nums2
         total = len(nums1) + len(nums2)
         
-        half = total //2
+        half = total // 2
         
         if len(B) < len(A):
             #swap the values 
@@ -25,10 +25,23 @@ class Solution:
             j = half - i - 2   #B
             
             
-            Aleft = A[i]
-            Aright = A[i + 1]
-            Bleft = B[j]
-            Bright = B[J + 1]
+            Aleft = A[i] if i >= 0 else float("-infinity")
+            Aright = A[i + 1] if (i +1) < len(A) else float("infinity")
+            Bleft = B[j] if j >= 0 else float("-infinity")
+            Bright = B[J + 1] if (j + 1) <len(B) else float("infinity")
+            
+            if Aleft <= Bright and Bleft <= Aright:
+                #odd
+                if total % 2:
+                    return min(Aright, Bright)
+                
+                #even 
+                return (max(Aleft, Bleft) + min(Aright, Bright)) / 2
+            elif Aleft > Bright:
+                r = i -1
+            else:
+                l = i +1 
+                     
         
 
 
