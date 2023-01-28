@@ -8,18 +8,26 @@
 
 # Overall the algorithm is called as Median of Two Sorted Array, which can be solved using the variant of binary search called Binary Search with variable length.
 
+
 #the code defines a class solution that contains a method findMedianSortedArrays which takes in two parameters, 'num1' and 'num2' which are the two sorted arrays for which we are trying to find median
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        #The method first creates two variables A and B and assigns them the values of nums1 and nums2 respectively.
         A, B = nums1, nums2
+        
+        #The variable total is defined as the sum of the lengths of the two input arrays, nums1 and nums2
         total = len(nums1) + len(nums2)
         
+        #The variable half is defined as the floor division of total by 2
         half = total // 2
         
+        
+        #The code then checks if the length of array B is less than that of array A. If it is, the values of A and B are swapped.
         if len(B) < len(A):
             #swap the values 
             A, B = B, A
         #run the binary values 
+        #Two variables l and r are defined and are assigned the values of 0 and (length of A - 1) respectively.
         l, r = 0, len(A)  - 1
         while True:
             i = (l + r) // 2    #A
