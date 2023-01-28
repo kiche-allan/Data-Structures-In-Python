@@ -29,15 +29,30 @@ class Solution:
         #run the binary values 
         #Two variables l and r are defined and are assigned the values of 0 and (length of A - 1) respectively.
         l, r = 0, len(A)  - 1
+        
+        #The code then enters into an infinite loop, which will only be broken out of when the median of the two arrays is found.
         while True:
+            #Within the loop, there are two variables i and j defined. i is assigned the floor division of the sum of l and r by 2. j is assigned the value of half - i - 2.
             i = (l + r) // 2    #A
             j = half - i - 2   #B
             
             
+            #The code then defines four variables: Aleft, Aright, Bleft, and Bright. Aleft is assigned the value of the element at index i in array A, if i is greater than or equal to 0. Otherwise, it is assigned the value of negative infinity. Aright is assigned the value of the element at index (i + 1) in array A, if (i + 1) is less than the length of A. Otherwise, it is assigned the value of positive infinity. Bleft is assigned the value of the element at index j in array B, if j is greater than or equal to 0. Otherwise, it is assigned the value of negative infinity. Bright is assigned the value of the element at index (j + 1) in array B, if (j + 1) is less than the length of B. Otherwise, it is assigned the value of positive infinity.
+
+#The code then checks if Aleft is less than or equal to Bright and Bleft is less than or equal to Aright. If both conditions are true, the median has been found. If total is odd, the median is returned as the minimum of Aright and Bright. If total is even, the median is returned as the average of the maximum of Aleft and Bleft and the minimum of Aright and Bright.
+
+#If the above conditions are not true, the code checks if Aleft is greater than Bright. If it is, the value of r is updated to be i - 1. If not, the value of l is updated to be i + 1.
+
+#The loop continues until the median is found and returned.
+
+
+
+
+
             Aleft = A[i] if i >= 0 else float("-infinity")
             Aright = A[i + 1] if (i +1) < len(A) else float("infinity")
             Bleft = B[j] if j >= 0 else float("-infinity")
-            Bright = B[J + 1] if (j + 1) <len(B) else float("infinity")
+            Bright = B[j + 1] if (j + 1) <len(B) else float("infinity")
             
             if Aleft <= Bright and Bleft <= Aright:
                 #odd
