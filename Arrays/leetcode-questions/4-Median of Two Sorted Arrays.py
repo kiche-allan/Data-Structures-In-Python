@@ -16,7 +16,19 @@ class Solution:
         half = total //2
         
         if len(B) < len(A):
+            #swap the values 
             A, B = B, A
+        #run the binary values 
+        l, r = 0, len(A)  - 1
+        while True:
+            i = (l + r) // 2    #A
+            j = half - i - 2   #B
+            
+            
+            Aleft = A[i]
+            Aright = A[i + 1]
+            Bleft = B[j]
+            Bright = B[J + 1]
         
 
 
