@@ -37,7 +37,11 @@ class Solution:
         l = 0
         
         for r in range(1, len(nums)):
+            
+            #if the current element is different from the previous element, increment l pointer and replace the element at l pointer with current elemnt
             if nums[r] != nums[l]:
                 l += 1
                 nums[l] = nums[r]
+                
+                # Return the length of the array containing unique elements
         return l + 1
