@@ -67,7 +67,15 @@ class Solution:
                 l = i +1 
                      
     # Describe your first thoughts on how to solve this problem
-#my first thoughts will be to combine the two sorted arrays into one sorted array and then find the median of the array. To combine the arrays, I would iterate through the arrays comparing the current element from each array and adding the smaller element to the combined array. I would repeat this process until all the elements from both arrays are added to the combined array. Once both have been processed, the median of the combined array can be calculated by finding the middle elements of the new array. If the combined array has an odd number of elements , the median is the middle element. If it has an even number, the media is the everage of the two middle elements
+#my first thoughts will be to combine the two sorted arrays into one sorted array and then find the median of the array. To combine the arrays, I would iterate through the arrays comparing the current element from each array and adding the smaller element to the combined array. I would repeat this process until all the elements from both arrays are added to the combined array. Once both have been processed, the median of the combined array can be calculated by finding the middle elements of the new array. If the combined array has an odd number of elements , the median is the middle element. If it has an even number, the media is the everage of the two middle elements.
+
+
+
+#Describe your approach to solving the problem.
+#My approach to solving this problem would be to use binary search as this allows us to find the median more efficiently than combining the arrays. I would divide the arrays into halves in each iteration of binary search and compare the valuesto dtermine which half of the arrays to continue searching in. I would keep track of the indices of the halves of the arrays and use them to calculate the median. I would continue this process until the median is found. The time complexity of this algorithm is O(log(m+n)). The space complexity is O(1) as we are not using any extra space to store the arrays.
+
+#Once I find the two elements such that one element from the first array is less than or equal to the next element in the second array and vice versa, I would calculate the median based on whether the total number of elements in both arrays is odd or even. If the total number of elements is odd, I would return the minimum of the two elements found in the current iteration.
+
         
 
 
