@@ -26,8 +26,13 @@
 #SOLUTION TWO
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
+        
+        # Check if the input array is empty, return 0 if it is
+        
         if not nums:
             return 0
+        
+        #initialize the two pointers, l and where l points to the last unique element and r iterates through the array
         
         l = 0
         
