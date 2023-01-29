@@ -62,3 +62,6 @@ class Solution:
 
 #Finally, I will return the length of the array containing only unique elements, which can be calculated as the slow pointer position + 1.
     
+    
+#time complexity
+# The time complexity of the solution above is 0(n), where n is the number of elements in the array. The fast pointer iterates through the array once, while the slow pointer iterates through the array at most once. Therefore, the time complexity is 0(n). This is because we are using a single loop to iterate through the input array once. The time taken by the loop is directly proportional to the size of the input array so the time complexity is linear
