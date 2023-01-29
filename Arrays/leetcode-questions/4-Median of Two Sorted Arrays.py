@@ -83,6 +83,8 @@ class Solution:
 
 # The reason the time complexity is logarithmic with respect to the minimum length of the two arrays, and not their sum, is that the solution only needs to search one of the arrays in each iteration, and the array with the smaller length is chosen to be searched. This ensures that the number of elements to search through in each iteration is always kept to a minimum.
         
+#The space complexity is O(1) as we are not using any extra space to store the arrays.
+#This is because the solution only uses a constant amount of space to store the variables used in the algorithm. The space complexity is O(1) as we are not using any extra space to store the arrays.      
 
 
 
