@@ -50,4 +50,15 @@ class Solution:
         return l + 1
     
     #Describe your first thoughts on how to solve this problem
+    
     # My first thought for solving this problem was using two pointers. One pointer will iterate through the array and the other pointer will keep track of the last unique element. If the current element is different from the previous element, the unique element pointer will be incremented and the current element will be placed in new position
+    
+    #
+    # Describe your approach to solving the problem.
+    
+    #My approach to solving this problem is to use two pointers, where one pointer iterates through the input array and the other pointer keeps track of the last unique element. The fast pointer will iterate through the array, starting from the second element, while the slow pointer starts from the first element.
+
+#At each step, I will compare the current element at the fast pointer with the previous element at the slow pointer. If they are different, it means the current element is unique, so I will increment the slow pointer by 1 and replace the element at the slow pointer with the current element. This way, all duplicates will be removed in-place and the relative order of the elements will be preserved.
+
+#Finally, I will return the length of the array containing only unique elements, which can be calculated as the slow pointer position + 1.
+    
