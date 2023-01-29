@@ -26,5 +26,3 @@ print(factorial(5))
 #it prints 120
 
 
-# Describe your first thoughts on how to solve this problem
-#my first thoughts will be to combine the two sorted arrays into one sorted array and then find the median of the array. To combine the arrays, I would iterate through the arrays comparing the current element from each array and adding the smaller element to the combined array. I would repeat this process until all the elements from both arrays are added to the combined array. Once both have been processed, the median of the combined array can be calculated by finding the middle elements of the new array
