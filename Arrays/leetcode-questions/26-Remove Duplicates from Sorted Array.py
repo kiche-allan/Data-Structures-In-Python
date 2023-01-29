@@ -44,4 +44,7 @@ class Solution:
                 nums[l] = nums[r]
                 
                 # Return the length of the array containing unique elements
+                #Return the length of the array containing unique elements
+        # The length of the array is slow + 1, as the slow pointer points to the last unique element, which is at index slow
+        return slow + 1
         return l + 1
