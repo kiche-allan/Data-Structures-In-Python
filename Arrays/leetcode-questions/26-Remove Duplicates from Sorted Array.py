@@ -65,3 +65,10 @@ class Solution:
     
 #time complexity
 # The time complexity of the solution above is 0(n), where n is the number of elements in the array. The fast pointer iterates through the array once, while the slow pointer iterates through the array at most once. Therefore, the time complexity is 0(n). This is because we are using a single loop to iterate through the input array once. The time taken by the loop is directly proportional to the size of the input array so the time complexity is linear
+
+
+
+#space complexity
+# The space complexity of the solution is O(1), which means that the space used by the algorithm is constant and does not grow with the size of the input.
+
+# The solution uses two pointers, slow and fast, which only take up a constant amount of memory, regardless of the size of the input array. The solution does not use any additional data structures or arrays, so the space complexity remains constant at O(1).
