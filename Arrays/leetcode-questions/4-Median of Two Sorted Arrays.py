@@ -80,6 +80,8 @@ class Solution:
 
 # The time complexity of the above solution is O(log(m+n)). The space complexity is O(1) as we are not using any extra space to store the arrays.
 # The time complexity of the above solution is O(log(min(len(nums1), len(nums2)))). This is because the solution uses a binary search,the search space is divided in half. As a result, the number of iterations required is proportional to log(min(len(nums1), len(nums2))). In each iteration, a constant amount of work is done such as index calculation and element of comparison, so the overal time complexity is O(log(min(len(nums1), len(nums2)))).
+
+# The reason the time complexity is logarithmic with respect to the minimum length of the two arrays, and not their sum, is that the solution only needs to search one of the arrays in each iteration, and the array with the smaller length is chosen to be searched. This ensures that the number of elements to search through in each iteration is always kept to a minimum.
         
 
 
