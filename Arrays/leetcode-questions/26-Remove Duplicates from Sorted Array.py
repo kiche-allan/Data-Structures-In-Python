@@ -46,5 +46,8 @@ class Solution:
                 # Return the length of the array containing unique elements
                 #Return the length of the array containing unique elements
         # The length of the array is slow + 1, as the slow pointer points to the last unique element, which is at index slow
-        return slow + 1
+        
         return l + 1
+    
+    #Describe your first thoughts on how to solve this problem
+    # My first thought for solving this problem was using two pointers. One pointer will iterate through the array and the other pointer will keep track of the last unique element. If the current element is different from the previous element, the unique element pointer will be incremented and the current element will be placed in new position
