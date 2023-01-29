@@ -76,6 +76,10 @@ class Solution:
 
 #Once I find the two elements such that one element from the first array is less than or equal to the next element in the second array and vice versa, I would calculate the median based on whether the total number of elements in both arrays is odd or even. If the total number of elements is odd, I would return the minimum of the two elements found in the current iteration.
 
+#explain the time complexity of the above question
+
+# The time complexity of the above solution is O(log(m+n)). The space complexity is O(1) as we are not using any extra space to store the arrays.
+# The time complexity of the above solution is O(log(min(len(nums1), len(nums2)))). This is because the solution uses a binary search,the search space is divided in half. As a result, the number of iterations required is proportional to log(min(len(nums1), len(nums2))). In each iteration, a constant amount of work is done such as index calculation and element of comparison, so the overal time complexity is O(log(min(len(nums1), len(nums2)))).
         
 
 
