@@ -45,7 +45,3 @@ arr1.remove(6)
 print(arr1)
 
 
-# Time and space complexity in one dimensional array
-
-Operation ---------------------------------- Time Complexity ------------------------------ Space Complexity
-Creating an empty array -------------------- O(1) ----------------------------------------- O(n)
