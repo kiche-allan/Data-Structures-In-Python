@@ -10,4 +10,20 @@ arr1.insert(6, 7)
 #inserting an element in the beginning of an array
 arr1.insert(2, 9)
 
-print(arr1)
+# print(arr1)
+
+#traversing arrays
+def traverseArray(array):
+    for i in array:
+        print(i)
+
+traverseArray(arr1)
+
+#accessing an element
+def accessElement(array, index):
+    if index> len(array):
+        print('There is not any element in this index')
+    else:
+        print(array[index])
+        
+accessElement(arr1, 1)
