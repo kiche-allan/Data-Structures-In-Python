@@ -21,9 +21,25 @@ traverseArray(arr1)
 
 #accessing an element
 def accessElement(array, index):
-    if index> len(array):
+    if index > len(array):
         print('There is not any element in this index')
     else:
         print(array[index])
         
-accessElement(arr1, 1)
+accessElement(arr1, 7)
+
+#searching an element in an array
+
+
+def searchArray(arr, value):
+    for i in array:
+        if i == value:
+            return arr.index(value)
+        return "The element does not exist in this array"
+
+    print(searchInArray(arr1, 7))
+    
+#deleting an element from an array
+
+arr1.remove(7)
+print(arr1)
