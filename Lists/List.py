@@ -27,3 +27,9 @@ for i in range(len(shoppingList)):
 emptyList = []
 for i in emptyList:
     print("This is not going to happen")
+
+#inserting an element in the list
+myList = [1, 2, 3, 4, 5]
+print(myList)
+myList[2] = 33
+print(myList)
