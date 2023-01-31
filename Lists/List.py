@@ -28,8 +28,22 @@ emptyList = []
 for i in emptyList:
     print("This is not going to happen")
 
-#inserting an element in the list
+#uupdating an element in the list
 myList = [1, 2, 3, 4, 5]
 print(myList)
 myList[2] = 33
+myList[0] = 11
 print(myList)
+
+# time complexity of the list
+0(1)
+
+#space complexity of the list
+0(1)
+
+#inserting an element in the list
+
+#insering an element to the beginning of list
+#inserting an elemnt to any given place in the list
+#inserting an element to the end of the list
+#inserting another list to the list
