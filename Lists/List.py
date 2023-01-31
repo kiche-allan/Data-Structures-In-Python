@@ -36,14 +36,33 @@ myList[0] = 11
 print(myList)
 
 # time complexity of the list
-0(1)
+# 0(1)
 
 #space complexity of the list
-0(1)
+# 0(1)
 
 #inserting an element in the list
+myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(myList)
 
 #insering an element to the beginning of list
+
+myList.insert(0, 33)
+myList.insert(5, 78)
+#it has an o(n) time complexity
+print(myList)
+
 #inserting an elemnt to any given place in the list
 #inserting an element to the end of the list
-#inserting another list to the list
+
+myList.append(100)
+#has an o(1) time complexity
+#has an o(1) space complexity
+print(myList)
+
+#adding another list to the list
+newList = [11, 22, 33, 44, 55]
+myList.extend(newList)
+#time complexity depends on the length of the list and size of the list
+
+print(myList)
