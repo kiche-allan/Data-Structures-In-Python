@@ -66,3 +66,13 @@ myList.extend(newList)
 #time complexity depends on the length of the list and size of the list
 
 print(myList)
+
+#deleting an element in the list
+myList2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+print(myList2)
+
+#slicing a list
+print(myList2[0:2])
+print(myList2[2:])
+print(myList2[:5])
+print(myList2[:])
