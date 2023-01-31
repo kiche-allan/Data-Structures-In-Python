@@ -76,3 +76,9 @@ print(myList2[0:2])
 print(myList2[2:])
 print(myList2[:5])
 print(myList2[:])
+
+#delete an element from the list
+#list methods for deletion
+# - pop()
+# - delete()
+# - remove()
