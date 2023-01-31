@@ -68,7 +68,7 @@ myList.extend(newList)
 print(myList)
 
 #deleting an element in the list
-myList2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+myList2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 print(myList2)
 
 #slicing a list
@@ -88,4 +88,17 @@ print(myList2)
 
 del myList2[6]
 print(myList2)
+
+del myList2[0:3]
+print(myList2)
+
+# del myList2[:]
+# print(myList2)
+
+del myList2[5:]
+print(myList2)
 # - remove()
+
+#delete a specific element in the list
+myList2.remove('g')
+print(myList2)
