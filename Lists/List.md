@@ -1,0 +1,1 @@
+A list in Python is a collection of ordered, mutable amnd heterogenous elements defined using square brackets[] and seperated by commas
