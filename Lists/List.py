@@ -79,6 +79,13 @@ print(myList2[:])
 
 #delete an element from the list
 #list methods for deletion
+
 # - pop()
+myList2.pop(3)
+print(myList2)
+
 # - delete()
+
+del myList2[6]
+print(myList2)
 # - remove()
