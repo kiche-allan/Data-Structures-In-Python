@@ -22,3 +22,8 @@ for i in shoppingList:
 for i in range(len(shoppingList)):
     shoppingList[i] = shoppingList[i] + "!"
     print(shoppingList[i])
+    
+#empty list
+emptyList = []
+for i in emptyList:
+    print("This is not going to happen")
