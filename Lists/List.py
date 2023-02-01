@@ -96,9 +96,24 @@ print(myList2)
 # print(myList2)
 
 del myList2[5:]
+#takes 0(n) time complexity 
 print(myList2)
 # - remove()
 
 #delete a specific element in the list
 myList2.remove('g')
+#takes 0(n) time complexity
 print(myList2)
+
+#pop function
+myList2.pop(3)
+#takes 0(1) time complexity
+print(myList2)
+
+# list operations / functions
+
+a = [1, 2, 3, 4]
+b = [5, 6, 7, 8]
+
+c = a + b
+print(c)
