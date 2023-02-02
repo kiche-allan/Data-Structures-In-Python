@@ -117,3 +117,16 @@ b = [5, 6, 7, 8]
 
 c = a + b
 print(c)
+
+a = [0, 1]
+a = a*4
+print(a)
+
+a = [0, 1, 2, 3, 4, 5, 6]
+print(len(a))
+
+#searching for an elemnt in the List
+myList3 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+#use an in operator
+if 20 in myList:
+    print(myList3.index(20))
