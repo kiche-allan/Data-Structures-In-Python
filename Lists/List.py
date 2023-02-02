@@ -133,3 +133,11 @@ if 20 in myList3:
     print(myList3.index(20))
 else:
     print('The value does not exist in the list')
+    
+    
+#use of a searchList
+def searchinList(list, value):
+    for i in list:
+        if i ==value:
+            return list.index(value)
+print(searchinList(myList3, 50))
