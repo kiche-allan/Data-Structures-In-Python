@@ -123,7 +123,9 @@ a = a*4
 print(a)
 
 a = [0, 1, 2, 3, 4, 5, 6]
-print(len(a))
+print(max(a))
+print(min(a))
+print(sum(a)/len(a))
 
 
 #searching for an elemnt in the List
