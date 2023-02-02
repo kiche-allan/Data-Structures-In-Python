@@ -125,8 +125,11 @@ print(a)
 a = [0, 1, 2, 3, 4, 5, 6]
 print(len(a))
 
+
 #searching for an elemnt in the List
-myList3 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+myList3 = [10,20,30,40,50,60,70,80,90,100]
 #use an in operator
-if 20 in myList:
+if 20 in myList3:
     print(myList3.index(20))
+else:
+    print('The value does not exist in the list')
