@@ -22,3 +22,14 @@ if 'Jack' in phone_book:
 
 for name in phone_book:
     print(name, phone_book[name])
+    
+    #update/ add an elemet to the dictionary
+    myDict = {'a': 1, 'b': 2, 'c': 3}
+    myDict['a'] = 5
+    print(myDict)
+    myDict['c'] = 4
+    print(myDict)
+    
+    #traverse through the dictionary
+    myDict = {'name': 'John', 'age': 26, 'salary': 5000}
+    
