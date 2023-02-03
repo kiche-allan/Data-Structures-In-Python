@@ -31,12 +31,12 @@ for name in phone_book:
     print(myDict)
     
     #traverse through the dictionary
-    myDict = {'name': 'John', 'age': 26, 'salary': 5000}
+    myDict2 = {'name': 'John', 'age': 26, 'salary': 5000}
     
     def traverseDict(dict):
         for key in dict:
             print(key, dict[key])
-    traverseDict(myDict)
+    traverseDict(myDict2)
     
     #searching an element in a dictionary
     
@@ -45,3 +45,13 @@ for name in phone_book:
             if dict[key] == value:
                 return key, value
             return 'The value does not exist in the dictionary'
+        
+    print(searchDict(myDict2, 26))
+    
+    #removing an element fro a dictionary
+    
+    myDict3 = {'name': 'Kiche', 'age': 26, 'address': 'Nairobi', 'education': 'bachelors'}
+    
+    print(myDict3.pop('name'))
+    
+    print(myDict3)
