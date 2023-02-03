@@ -65,5 +65,8 @@ for name in phone_book:
     myDict4 = {'name': 'Kiche', 'age': 26, 'address': 'Nairobi', 'education': 'bachelors', 'salary': 5000, 'phone': 123456789}
     
     dict = myDict4.copy()
-    print(myDict4)
+    print(myDict4) 
     print(dict)
+    
+    #get a method. it taes 2 parameters - 
+    
