@@ -33,3 +33,8 @@ for name in phone_book:
     #traverse through the dictionary
     myDict = {'name': 'John', 'age': 26, 'salary': 5000}
     
+    def traverseDict(dict):
+        for key in dict:
+            print(key, dict[key])
+    traverseDict(myDict)
+    
