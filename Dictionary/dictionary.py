@@ -60,3 +60,10 @@ for name in phone_book:
     
     myDict3.clear()
     print(myDict3)
+    
+    #copying a dictionary
+    myDict4 = {'name': 'Kiche', 'age': 26, 'address': 'Nairobi', 'education': 'bachelors', 'salary': 5000, 'phone': 123456789}
+    
+    dict = myDict4.copy()
+    print(myDict4)
+    print(dict)
