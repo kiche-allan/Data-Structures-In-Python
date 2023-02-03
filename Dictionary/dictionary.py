@@ -38,3 +38,10 @@ for name in phone_book:
             print(key, dict[key])
     traverseDict(myDict)
     
+    #searching an element in a dictionary
+    
+    def searchDict(dict, value):
+        for key in dict:
+            if dict[key] == value:
+                return key, value
+            return 'The value does not exist in the dictionary'
