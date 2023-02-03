@@ -55,3 +55,8 @@ for name in phone_book:
     print(myDict3.pop('name'))
     
     print(myDict3)
+    
+    # or use clear method
+    
+    myDict3.clear()
+    print(myDict3)
