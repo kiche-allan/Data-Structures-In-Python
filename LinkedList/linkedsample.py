@@ -14,11 +14,13 @@ linked_list = LinkedList()
 linked_list.head = Node(1)
 second = Node(2)
 third = Node(3)
+forth = Node(4)
 
 #connect nodes
 
 linked_list.head.next = second
 second.next = third
+third.next = forth
 
 #print the linked list item
 while linked_list.head != None:
