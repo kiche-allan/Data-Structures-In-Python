@@ -1,0 +1,1 @@
+A linkedlist is a data structure that consist of a group of nodes that are linked together in a linear fashion. Each node in a linked list contains a value and a reference to the next node in the list. In Python, u can implement a linked list using classes and objects

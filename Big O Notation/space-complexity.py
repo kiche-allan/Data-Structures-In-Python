@@ -6,3 +6,5 @@ def pairSumsequence(n):
 
 def pairSum(a, b):
     return a + b
+
+def pair

@@ -8,6 +8,7 @@ Both practices are used to simplify the mathematical expression that describes t
 
 It's worth noting that dropping constants and ignoring non-dominant terms are only used when analyzing time complexity, they don't apply to space complexity analysis or other types of analysis.
 
+snwekejwjjwhjwusssjsjwjwhwuw7h
 
 
 
