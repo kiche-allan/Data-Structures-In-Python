@@ -52,6 +52,17 @@ def deleteNode(self, location):
             nextNode = tempNode.next
             tempNode.next = nextNode.next
                 
+singleLinkedList = LinkedList()
+singleLinkedList.insertNode(1, 1)
+singleLinkedList.insertNode(2, 1)
+singleLinkedList.insertNode(3, 1)
+singleLinkedList.insertNode(4, 2)
+singleLinkedList.insertNode(0, 0)
+singleLinkedList.insertNode(0, 4)
+
+print([node.value for node in singleLinkedList])
+singleLinkedList.deleteNode(3)
+print([node.value for node in singleLinkedList])
                  
                 
             
