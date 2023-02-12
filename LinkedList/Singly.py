@@ -34,6 +34,25 @@ def deleteNode(self, location):
             if self.head == self.tail:
                 self.head = None
                 self.tail = None
+            else:
+                node = self.head 
+                while node is not None:
+                    if node.next == self.tail:
+                        break
+                    node = node.next
+                node.next = None
+                self.tail = node
+                
+        else:
+            tempNode = self.head
+            index = 0
+            while index < location - 1:
+                tempNode = tempNode.next
+                index += 1
+            nextNode = tempNode.next
+            tempNode.next = nextNode.next
+                
+                 
                 
             
                 
