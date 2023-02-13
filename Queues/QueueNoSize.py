@@ -20,6 +20,9 @@ class Queue:
         return "The element has been successfully inserted"
     
 customerQueue = Queue()
-print(customerQueue.isEmpty())
+customerQueue.enqueue(1)
+customerQueue.enqueue(2)
+customerQueue.enqueue(3)
+print(customerQueue)
     
     
