@@ -65,3 +65,10 @@ class Solution:
 # One way to solve this problem is to use a stack data structure to keep track of the opening parentheses as you iterate through the input string. Whenever you encounter an opening parenthesis, you can push it onto the stack. Whenever you encounter a closing parenthesis, you can pop the last opening parenthesis from the stack and check if it matches the current closing parenthesis. If the parentheses are properly balanced, at the end of the iteration, the stack should be empty. If there are any unmatched parentheses, the stack will not be empty and you can return False.
 
 # This approach is straightforward and easy to implement, making it a popular solution for this type of problem.
+
+# whats the time complexity
+# The time complexity of this approach is O(n), where n is the length of the input string. This is because the algorithm iterates through the input string once, and each iteration takes constant time to push or pop an element from the stack. In the worst case, where all the characters in the string are opening parentheses, the stack size will be equal to n, so the time complexity of the algorithm is linear.
+
+
+# Whats the space complexity
+# The space complexity of this approach is O(n), where n is the length of the input string. This is because in the worst case, where all the characters in the string are opening parentheses, the stack size will be equal to n, and you need to allocate space for the stack. The space required for the stack will grow linearly with the size of the input string, so the space complexity of the algorithm is linear.
