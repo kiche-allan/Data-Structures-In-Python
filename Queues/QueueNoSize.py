@@ -1,9 +1,9 @@
 class Queue:
     def __init__(self):
-        self.queue = []
+        self.items = []
         
     def __str__(self) -> str:
-        values = [str(x) for x in self.queue]
+        values = [str(x) for x in self.items]
         return ' '.join(values)
     
     # create empty method
