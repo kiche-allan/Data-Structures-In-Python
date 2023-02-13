@@ -27,11 +27,24 @@ class Stack:
             return False
         
     def push(self, value):
-        node.next = self.Linked.head
+        node = Node(value)
+        node.next = self.LinkedList.head
         self.LinkedList.head = node
+        
+    #pop method
+    def pop(self):
+        if self.isEmpty():
+            return "There is not any element in the stack"
+        else:
+            nodeValue = self.LinkedList.head.value
+            self.LinkedList.head = self.LinkedList.head.next
+            return nodeValue
 
         
 customStack = Stack()
-print(customStack.isEmpty())
+customStack.push(1)
+customStack.push(2)
+customStack.push(3)
+print(customStack)
 
         
