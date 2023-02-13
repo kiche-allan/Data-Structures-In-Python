@@ -1,9 +1,31 @@
 class Stack:
     def __init__(self) -> None:
-        self.maxSize = maxsize
+        self.maxSize = maxSize
         self.list = []
         
     def __str__(self):
         values = self.list.reverse()
         values = [str(x) for x in self.list]
         return '\n'.join(values)
+    
+    #isEmpty
+    def isEmpty(self):
+        if self.list == []:
+            return True
+        else:
+            return False
+        
+    #isFull Method
+    def isFull(self):
+        if len(self.list) == self.maxSize:
+            return True
+        else:
+            return False
+        
+    #push method
+    def push(self, value):
+        if self.isFull():
+            return "The stack is full"
+        else:
+            self.list.append(value)
+            return "The element has been successfully inserted"
