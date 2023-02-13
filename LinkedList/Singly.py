@@ -30,6 +30,7 @@ def deleteNode(self, location):
                 self.tail = None
             else:
                 self.head = self.head.next
+                
         elif location == 1:
             if self.head == self.tail:
                 self.head = None
