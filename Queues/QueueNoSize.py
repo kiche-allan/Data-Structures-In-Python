@@ -19,10 +19,20 @@ class Queue:
         self.items.append(value)
         return "The element has been successfully inserted"
     
+    def dequeue(self):
+        if self.isEmpty():
+            return "There is no any element in the queue"
+        else:
+            return self.items.pop(0)
+        
+        
+        
+    
 customerQueue = Queue()
 customerQueue.enqueue(1)
 customerQueue.enqueue(2)
 customerQueue.enqueue(3)
+print(customerQueue.dequeue())
 print(customerQueue)
     
     
