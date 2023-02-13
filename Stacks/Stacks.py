@@ -26,11 +26,20 @@ class Stack:
         else:
             return self.list.pop()
         
-        
+       
+    #peek
+    def peek(self):
+        if self.isEmpty():
+            return "There is not any element in the stack"
+        else:
+            return self.list[len(self.list)-1]
+     
 customStack = Stack()
 customStack.push(1)
 customStack.push(2)
 customStack.push(3)
 
-print(customStack.pop())
-print(customStack.pop)
+# print(customStack.pop())
+# print(customStack.pop)
+
+print(customStack.peek())
