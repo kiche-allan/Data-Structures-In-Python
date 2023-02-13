@@ -57,3 +57,5 @@ class Solution:
 
 # The purpose of this method is to determine whether the parentheses in the input string are balanced, i.e., every opening parenthesis has a corresponding closing parenthesis, and they are properly nested.
         
+# Describe your first thoughts on how to solve this problem.
+# To solve this problem, you can use a stack data structure to keep track of the opening parentheses as you iterate through the input string. Whenever you encounter an opening parenthesis, you can push it onto the stack. Whenever you encounter a closing parenthesis, you can pop the last opening parenthesis from the stack and check if it matches the current closing parenthesis. If the parentheses are properly balanced, at the end of the iteration, the stack should be empty. If there are any unmatched parentheses, the stack will not be empty and you can return False.
