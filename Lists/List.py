@@ -139,9 +139,11 @@ else:
     
     
 #use of a searchList
-def searchinList(list, value):
+def searchingList(list, value):
     for i in list:
         if i == value:
             return list.index(value)
         return "the value does not exist in the list"
-print(searchinList(myList3, 50))
+print(searchingList(myList3, 50))
+
+

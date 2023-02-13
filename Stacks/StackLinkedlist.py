@@ -40,11 +40,23 @@ class Stack:
             self.LinkedList.head = self.LinkedList.head.next
             return nodeValue
 
+    #peek method
+    def peep(self):
+        if self.isEmpty():
+            return "There is not any element in the stack"
+        else:
+            nodeValue = self.LinkedList.head.value
+            self.LinkedList.head = self.LinkedList.head.next
+            return nodeValue
+        
         
 customStack = Stack()
 customStack.push(1)
 customStack.push(2)
 customStack.push(3)
+print(customStack)
+print("-------")
+print(customStack.pop())
 print(customStack)
 
         
