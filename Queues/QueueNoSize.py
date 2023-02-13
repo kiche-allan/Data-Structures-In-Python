@@ -25,6 +25,17 @@ class Queue:
         else:
             return self.items.pop(0)
         
+    #peek method
+    def peek(self):
+        if self.isEmpty():
+            return "There is not any element in the equeue"
+        else:
+            return self.items[0]
+        
+    #delete method
+    def delete(self):
+        self.items = None
+        return "The queue has been successfully deleted"
         
         
     
