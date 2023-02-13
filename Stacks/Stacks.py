@@ -32,4 +32,5 @@ customStack.push(1)
 customStack.push(2)
 customStack.push(3)
 
-print(customStack)
+print(customStack.pop())
+print(customStack.pop)
