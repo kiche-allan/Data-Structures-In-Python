@@ -26,6 +26,15 @@ class Stack:
     def push(self, value):
         if self.isFull():
             return "The stack is full"
+        
         else:
             self.list.append(value)
             return "The element has been successfully inserted"
+        
+customStack = Stack(4)
+print(customStack.isEmpty())
+print(customStack.isFull())
+customStack.push(1)
+customStack.push(2)
+customStack.push(3)
+print(customStack)
