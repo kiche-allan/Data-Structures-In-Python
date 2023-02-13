@@ -59,4 +59,3 @@ print("-------")
 print(customStack.pop())
 print(customStack)
 
-        
