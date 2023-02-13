@@ -19,6 +19,12 @@ class Stack:
         self.list.append(value) 
         return "The element has been successfully "
         
+    #pop
+    def pop(self):
+        if self.isEmpty():
+            return "There is not any element in the stack"
+        else:
+            return self.list.pop()
         
         
 customStack = Stack()
