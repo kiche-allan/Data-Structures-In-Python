@@ -59,3 +59,9 @@ class Solution:
         
 # Describe your first thoughts on how to solve this problem.
 # To solve this problem, you can use a stack data structure to keep track of the opening parentheses as you iterate through the input string. Whenever you encounter an opening parenthesis, you can push it onto the stack. Whenever you encounter a closing parenthesis, you can pop the last opening parenthesis from the stack and check if it matches the current closing parenthesis. If the parentheses are properly balanced, at the end of the iteration, the stack should be empty. If there are any unmatched parentheses, the stack will not be empty and you can return False.
+
+# Describe your approach to solving the problem
+
+# One way to solve this problem is to use a stack data structure to keep track of the opening parentheses as you iterate through the input string. Whenever you encounter an opening parenthesis, you can push it onto the stack. Whenever you encounter a closing parenthesis, you can pop the last opening parenthesis from the stack and check if it matches the current closing parenthesis. If the parentheses are properly balanced, at the end of the iteration, the stack should be empty. If there are any unmatched parentheses, the stack will not be empty and you can return False.
+
+# This approach is straightforward and easy to implement, making it a popular solution for this type of problem.
