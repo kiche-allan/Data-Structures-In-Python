@@ -45,6 +45,6 @@ customerQueue.enqueue(2)
 customerQueue.enqueue(3)
 print(customerQueue.peek())
 print(customerQueue.dequeue())
-print(customerQueue)
+customerQueue.delete()
     
     
