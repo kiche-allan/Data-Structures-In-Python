@@ -40,4 +40,20 @@ class Solution:
             else:
                 stack.append(c)
         return True if not stack else False
+    
+#     This code defines a class named Solution with a method named isValid. The method takes a string s as input and returns a boolean indicating whether the string is a valid parenthesis sequence. The method uses a stack data structure to keep track of the opening parentheses as it iterates through the input string.
+
+# Here's how the method works:
+
+# Initialize an empty stack stack and a dictionary closeToOpen that maps closing parentheses to their corresponding opening parentheses.
+
+# For each character c in the input string s, do the following:
+
+# If c is a closing parenthesis and the stack is not empty, pop the last element from the stack and compare it with the corresponding opening parenthesis from the closeToOpen dictionary. If they match, continue with the next character. If they don't match, return False.
+
+# If c is an opening parenthesis, push it onto the stack.
+
+# After iterating through all the characters in the input string, return True if the stack is empty, otherwise return False.
+
+# The purpose of this method is to determine whether the parentheses in the input string are balanced, i.e., every opening parenthesis has a corresponding closing parenthesis, and they are properly nested.
         
