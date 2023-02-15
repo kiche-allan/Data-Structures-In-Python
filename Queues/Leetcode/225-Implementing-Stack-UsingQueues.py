@@ -22,3 +22,4 @@ class MyStack:
         return len(self.q) == 0
    
             
+The above code implements a stack using a deque data structure in Python. The deque data structure is a double-ended queue that supports adding and removing elements from either end of the queue. The deque data structure is a double-ended queue that supports adding and removing elements from either end of the queue.
