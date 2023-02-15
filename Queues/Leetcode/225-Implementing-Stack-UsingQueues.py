@@ -22,4 +22,11 @@ class MyStack:
         return len(self.q) == 0
    
             
-The above code implements a stack using a deque data structure in Python. The deque data structure is a double-ended queue that supports adding and removing elements from either end of the queue. The deque data structure is a double-ended queue that supports adding and removing elements from either end of the queue.
+# The above code implements a stack using a deque data structure in Python. The deque data structure is a double-ended queue that supports adding and removing elements from either end of the queue. The deque data structure is a double-ended queue that supports adding and removing elements from either end of the queue.
+
+# The MyStack class has the init method that initializes a deque q as an empty container. The class also has a push method that adds an integer 'x' to the end of the deque using the append method.
+# The pop method, which removes and returns the last element in the stack, works by moving all elements except the last one to the beginning of the deque using a loop that iterates over len(self.q) - 1 times.
+
+# The popleft method is used to remove the first element of the deque and add it back to the end of the deque using the push method. Finally, the last element of the deque, which is the original last element of the stack, is removed and returned using popleft.
+
+# One important note is that this implementation has a time complexity of O(n) for the pop method, where n is the number of elements in the stack. This is because, in the worst case, we need to move all elements in the deque to the front to access the last element.
