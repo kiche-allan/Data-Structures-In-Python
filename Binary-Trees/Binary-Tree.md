@@ -1,1 +1,5 @@
-A binary tree is a type of data structure that consuists of nodes, each of whic has at most 2 chid notes known as left and right child. The first node which has no parent is called the root node
+A binary tree is a type of data structure that consists of nodes, each of which has at most 2 child nodes known as left and right child. The first node which has no parent is called the root node.
+
+Each node in a binary tree typically contains a piece of data and the structure of the tree allows for efficient searching, sorting and other operations on the data. 
+
+Binary trees can be used to represent a wide variety of hierachial relationship such as the structure of a file system, the prganization of the company and the structure of the programming language. There are many different algorithms and techniques that can be used with binary trees such as the traversal algorithms foe  isiting all the nodes in the tree and balancing algorithms for ensuring that the tree is as balanced and efficient as possible.  
