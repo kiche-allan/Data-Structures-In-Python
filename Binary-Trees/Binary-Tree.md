@@ -1,0 +1,1 @@
+A binary tree is a type of data structure that consuists of nodes, each of whic has at most 2 chid notes known as left and right child. The first node which has no parent is called the root node
