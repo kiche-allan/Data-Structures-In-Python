@@ -8,3 +8,13 @@ class TreeNode:
             ret += child.__str__(level + 1)
         return ret
         
+    def addChild(self, TreeNode):
+        self.children.append(TreeNode)
+        
+tree = TreeNode('Drinks', [])
+cold = TreeNode('Cold', [])
+hot = TreeNode('Hot', [])
+tree.addChild(cold)
+tree.addChild(hot)
+print(tree)
+ 
