@@ -15,3 +15,15 @@ Pre-order traversal: In this method, the node itself is visited first, followed 
 Post-order traversal: In this method, the left and right subtrees of a node are visited first, followed by the node itself. This traversal method is often used for deleting the nodes of the tree.
 
 In addition to traversal, there are many other algorithms and techniques that can be used with binary trees, such as balancing algorithms to ensure that the tree is as efficient as possible, and search algorithms such as binary search to quickly find a specific value in the tree. Overall, binary trees are a powerful and versatile data structure that can be used to solve a wide range of problems in computer science and programming.
+
+- Binary Tree is a family of data structure(BST, Heap tree, AVL, red black trees, Syntax tree)
+Huffman coding problem, heap priority problem and expression parsing problem can be solved efficiently using binary trees
+
+Types of Binary Trees
+
+- Full Binary Tree
+- Perfect Binary Tree
+- Complete binary tree
+- Balanced binary tree 
+
+- Binary trees can be represented in two ways- one thru use of linked list and the other thru the use of arrays
