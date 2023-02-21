@@ -22,5 +22,10 @@ coffee = TreeNode('Coffee', [])
 
 colla = TreeNode('colla', [])
 fanta = TreeNode('fanta', [])
+
+cold.appendChild(colla)
+cold.appendChild(fanta)
+hot.appendChild(tea)
+hot.appendChild(coffee)
 print(tree)
  
