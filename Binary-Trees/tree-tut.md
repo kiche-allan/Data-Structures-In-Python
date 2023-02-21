@@ -19,3 +19,4 @@ Sibling - children of the same parent
 Ancestor - parent, grandparent, great grandparent of a node
 depth of node - a length of the path from root to node
 height of a node - a length of the path from the node to the deepest node
+depth of a tree - depth of root node. 
