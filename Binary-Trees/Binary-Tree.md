@@ -13,3 +13,5 @@ In-order traversal: In this method, the left subtree of each node is visited fir
 Pre-order traversal: In this method, the node itself is visited first, followed by its left subtree and then its right subtree. This traversal method is often used for creating a copy of the tree.
 
 Post-order traversal: In this method, the left and right subtrees of a node are visited first, followed by the node itself. This traversal method is often used for deleting the nodes of the tree.
+
+In addition to traversal, there are many other algorithms and techniques that can be used with binary trees, such as balancing algorithms to ensure that the tree is as efficient as possible, and search algorithms such as binary search to quickly find a specific value in the tree. Overall, binary trees are a powerful and versatile data structure that can be used to solve a wide range of problems in computer science and programming.
