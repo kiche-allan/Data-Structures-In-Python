@@ -16,5 +16,11 @@ cold = TreeNode('Cold', [])
 hot = TreeNode('Hot', [])
 tree.addChild(cold)
 tree.addChild(hot)
+
+tea = TreeNode('Tea', [])
+coffee = TreeNode('Coffee', [])
+
+colla = TreeNode('colla', [])
+fanta = TreeNode('fanta', [])
 print(tree)
  
