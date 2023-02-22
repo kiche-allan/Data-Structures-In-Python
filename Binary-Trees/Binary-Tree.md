@@ -27,3 +27,11 @@ Types of Binary Trees
 - Balanced binary tree 
 
 - Binary trees can be represented in two ways- one thru use of linked list and the other thru the use of arrays
+
+Operations in a tree
+- Creation of a Tree
+- Insertion of a node
+- Deletion of a node
+- Search for a value
+- Traverse all nodes
+- Deletion of tree
