@@ -15,6 +15,8 @@ class TreeNode:
         self.left = left
         self.right = right
         
+        # In this code, the TreeNode class represents a node in a binary tree, with a val attribute representing the node's value and left and right attributes representing its left and right children. The levelOrder function takes a root parameter representing the root node of the binary tree, and returns a list of integers representing the values of the nodes visited in level order.
+        
 def levelOrderTraversal(root: TreeNode) -> List[int]:
     if not root:
         return []
@@ -35,3 +37,8 @@ def levelOrderTraversal(root: TreeNode) -> List[int]:
                 
             if node.right:
                 queue.append(node.right)
+                
+        result.append(level_nodes)
+        
+    flat_result = [val for sublist in result for val in sublist]
+    return flat_result
