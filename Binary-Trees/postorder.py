@@ -33,3 +33,13 @@ def postorderTraversal(root: TreeNode) -> List(int):
             stack.append(node.right)
             
     return result[::-1]
+
+# In this code, the TreeNode class represents a node in a binary tree, with a val attribute representing the node's value and left and right attributes representing its left and right children. The postorderTraversal function takes a root parameter representing the root node of the binary tree, and returns a list of integers representing the values of the nodes visited in postorder.
+
+# The function initializes an empty result list and a stack that starts with the root node. It then enters a loop that continues as long as the stack is not empty. In each iteration, the function pops a node from the stack, appends its value to the result list, and then pushes its right and left children (if they exist) onto the stack.
+
+# This way, the function visits the left subtree first in postorder, then the right subtree in postorder, and finally the root node. Finally, it returns the result list with the values of all the nodes visited, but reversed since we visited the nodes in the reverse order of postorder traversal.
+
+
+
+
