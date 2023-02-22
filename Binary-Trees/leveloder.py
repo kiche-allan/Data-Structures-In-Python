@@ -43,3 +43,7 @@ def levelOrderTraversal(root: TreeNode) -> List[int]:
         
     flat_result = [val for sublist in result for val in sublist]
     return flat_result
+
+#     Once all the nodes in the current level have been processed, the level_nodes list is appended to the result list. This process is repeated until all the nodes in the tree have been visited.
+
+# Finally, the function flattens the result list into a single list of values
