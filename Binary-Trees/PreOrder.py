@@ -32,4 +32,10 @@ def preorderTraversal(root: TreeNode):
             stack.append(node.left)
             
     return result
-        
+    
+    
+# In this code, the TreeNode class represents a node in a binary tree, with a val attribute representing the node's value and left and right attributes representing its left and right children. The preorderTraversal function takes a root parameter representing the root node of the binary tree, and returns a list of integers representing the values of the nodes visited in preorder.
+
+# The function initializes an empty result list and a stack that starts with the root node. It then enters a loop that continues as long as the stack is not empty. In each iteration, the function pops a node from the stack, appends its value to the result list, and then pushes its right and left children (if they exist) onto the stack.
+
+# This way, the function visits the root node first, then the left subtree in preorder, and then the right subtree in preorder. Finally, it returns the result list with the values of all the nodes visited.
