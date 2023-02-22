@@ -38,6 +38,7 @@ def levelOrderTraversal(root: TreeNode) -> List[int]:
             if node.right:
                 queue.append(node.right)
                 
+                # The function initializes an empty result list and a queue that starts with the root node. It then enters a loop that continues as long as the queue is not empty. In each iteration, the function retrieves the size of the current level by getting the length of the queue, creates an empty list level_nodes to store the values of the nodes in that level, and iterates over the nodes in the current level. For each node, it appends its value to level_nodes, and then adds its left and right children (if they exist) to the end of the queue.
         result.append(level_nodes)
         
     flat_result = [val for sublist in result for val in sublist]
