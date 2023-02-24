@@ -24,3 +24,7 @@ def deleteBT(rootNode):
     rootNode.leftChild = None
     rootNode.rightChild = None
     return "The BT has been successfully deleted"
+#setting up a value is 0(1) time complexity
+
+# deleteBT(newBT)
+# levelOrderTraversal(newBT)
