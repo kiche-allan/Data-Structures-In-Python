@@ -65,6 +65,22 @@ def deleteNodeBT(rootNode, node):
                 customQueue.enqueue(rootNode.leftChild)
             if rootNode.rightChild:
                 customQueue.enqueue(rootNode.rightChild)
+                
+def searchNode(self, nodeValue):
+    if not self.rootNode:
+        return "The tree does not exist"
+    else:
+        customQueue = queue.Queue()
+        customQueue.enqueue(self.rootNode)
+        while not (customQueue.isEmpty()):
+            rootNode = customQueue.dequeue()
+            if rootNode.data == nodeValue:
+                return "The node is present in the tree"
+            if rootNode.leftChild:
+                customQueue.enqueue(rootNode.leftChild)
+            if rootNode.rightChild:
+                customQueue.enqueue(rootNode.rightChild)
+        return "The node is not present in the tree"
                     
 newNode = getDeepestNode(newBT)
 deleteDeepestNode(newBT, newNode)
