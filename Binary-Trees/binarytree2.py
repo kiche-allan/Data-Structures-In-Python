@@ -48,3 +48,7 @@ def deleteDeepestNode(rootNode, dNode):
                     return
                 else:
                     customQueue.enqueue(rootNode.leftChild)
+                    
+newNode = getDeepestNode(newBT)
+deleteDeepestNode(newBT, newNode)
+levelOrderTraversal(newBT)
