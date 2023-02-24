@@ -24,3 +24,27 @@ def getDeepestNode(rootNode):
     
 deepesNode = getDeepestNode(newBT)
 print(deepesNode.data)
+
+def deleteDeepestNode(rootNode, dNode):
+    if not rootNode:
+        return
+    else:
+        customQueue = queue.Queue()
+        customQueue.enqueue(rootNode)
+        while not (customQueue.isEmpty()):
+            rootNode = customQueue.dequeue()
+            if rootNode is dNode:
+                rootNode = None
+                return
+            if rootNode.rightChild:
+                if rootNode.rightChild is dNode:
+                    rootNode.rightChild = None
+                    return
+                else:
+                    customQueue.enqueue(rootNode.rightChild)
+            if rootNode.leftChild:
+                if rootNode.leftChild is dNode:
+                    rootNode.leftChild = None
+                    return
+                else:
+                    customQueue.enqueue(rootNode.leftChild)
