@@ -19,3 +19,8 @@ def getDeepestNode(rootNode):
                 customQueue.enqueue(rootNode.leftChild)
             if rootNode.rightChild:
                 customQueue.enqueue(rootNode.rightChild)
+        deepesNode = root.value
+        return deepesNode
+    
+deepesNode = getDeepestNode(newBT)
+print(deepesNode.data)
