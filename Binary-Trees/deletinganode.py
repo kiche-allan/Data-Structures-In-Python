@@ -10,3 +10,17 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+def deleteNode(root: TreeNode, key: int) -> TreeNode:
+    if not root:
+        return None
+    
+    if key < root.val:
+        root.left = deleteNode(root.left, key)
+    elif key > root.val:
+        root.left = deleteNode(root.right, key)
+        
+def deleteBT(rootNode):
+    rootNode.data = None
+    rootNode.leftChild = None
+    rootNode.rightChild = None
+    return "The BT has been successfully deleted"
