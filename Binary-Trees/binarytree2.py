@@ -48,6 +48,23 @@ def deleteDeepestNode(rootNode, dNode):
                     return
                 else:
                     customQueue.enqueue(rootNode.leftChild)
+
+def deleteNodeBT(rootNode, node):
+    if not rootNode:
+        return
+    else:
+        customQueue = queue.Queue()
+        customQueue.enqueue(rootNode)
+        while not (customQueue.isEmpty()):
+            rootNode = customQueue.dequeue()
+            if rootNode.data == node:
+                rootNode.data = getDeepestNode(rootNode)
+                deleteDeepestNode(rootNode)
+                return
+            if rootNode.leftChild:
+                customQueue.enqueue(rootNode.leftChild)
+            if rootNode.rightChild:
+                customQueue.enqueue(rootNode.rightChild)
                     
 newNode = getDeepestNode(newBT)
 deleteDeepestNode(newBT, newNode)
