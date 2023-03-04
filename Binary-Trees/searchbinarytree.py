@@ -9,4 +9,11 @@ def searchBT(rootNode, nodeValue):
             root = customQueue.dequeue()
             if root.value.data ==nodeValue:
                 return "Success"
+            
+            if (root.value.leftChild is not None):
+                customQueue.enqueue(root.value.leftChild)
+            if (root.value.rightChild is not None):
+                customQueue.enqueue(root.value.rightChild)
+                
+        return "Not found"
           
