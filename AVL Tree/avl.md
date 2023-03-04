@@ -37,10 +37,5 @@ Successor and predecessor: Find the node with the next larger or smaller key tha
 
 Overall, the AVL tree supports all the basic operations of a binary search tree, while ensuring that the tree remains balanced, which in turn ensures efficient search, insertion, and deletion operations.
 
-
-
-
-
-Regenerate response
-
+ Balance factor of a node in an avl is the diffeence between the height of the left subtree and that of the right subtree of that node
 
