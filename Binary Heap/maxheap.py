@@ -36,6 +36,8 @@ class MaxHeap:
     def extract_max(self):
         if len(self.heap) == 0:
             return None
+        max_val = self.heap[0]
+        self.heap[0] = self.heap[-1]
             
         
         
