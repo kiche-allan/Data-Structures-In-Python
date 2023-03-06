@@ -19,5 +19,9 @@ class MaxHeap:
         while i > 0 and self.head[i] > self.heap[self.parent(i)]:
             self.swap(i, self.parent(i))
             i = self.parent(i)
+            
+    def max_heapify(self, i):
+        l = self.left_child(i)
+        r = self.right_child(i)
         
         
