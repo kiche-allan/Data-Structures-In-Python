@@ -27,6 +27,8 @@ class MaxHeap:
         largest = i
         if l< len(self.heap) and self.heap[l]> self.heap[i]:
             largest = l
+        if r < len(self, heap) and self.heap[r] > self.heap[largest]:
+            largest = r
             
         
         
