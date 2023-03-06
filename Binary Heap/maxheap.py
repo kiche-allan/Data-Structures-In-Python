@@ -38,6 +38,10 @@ class MaxHeap:
             return None
         max_val = self.heap[0]
         self.heap[0] = self.heap[-1]
+        self.max_heapify(0)
+        return max_val
+    def print_heap(self):
+        print(self.heap)
             
         
         
