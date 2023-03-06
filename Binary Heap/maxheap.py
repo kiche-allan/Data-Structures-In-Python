@@ -43,5 +43,14 @@ class MaxHeap:
     def print_heap(self):
         print(self.heap)
             
+# Example usage
+max_heap = MaxHeap()
+max_heap.insert(5)
+max_heap.insert(3)
+max_heap.insert(8)
+max_heap.insert(2)
+max_heap.insert(7)
+max_heap.print_heap() # Output: [8, 7, 5, 2, 3]
+
         
         
