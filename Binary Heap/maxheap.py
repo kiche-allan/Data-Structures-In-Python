@@ -11,6 +11,13 @@ class MaxHeap:
         return 2*i +2
     
     def swap(self, i, j):
-        self.heap[i], self.heap[j]
+        self.heap[i], self.heap[j] = self.heap[j], self.heap[i]
+        
+    def insert(self, item):
+        self.heap.append(item)
+        i = len(self.heap) - 1
+        while i > 0 and self.head[i] > self.heap[self.parent(i)]:
+            self.swap(i, self.parent(i))
+            i = self.parent(i)
         
         
