@@ -8,3 +8,7 @@ Some of the important operations performed on a heap are described below along w
 
 Heapify
 Heapify is the process of creating a heap data structure from a binary tree. It is used to create a Min-Heap or a Max-Heap.
+
+A binary heap is a binary tree data structure that satisfies the heap property. In a binary heap, each node has a value greater than or equal to (for max-heap) or less than or equal to (for min-heap) the values of its children. This means that the root node of a max-heap contains the largest value in the heap, while the root node of a min-heap contains the smallest value.
+
+Binary heaps are commonly used to implement priority queues, which allow efficient insertion and deletion of elements in a dynamically changing set. The heap property guarantees that the highest priority element is always at the root of a max-heap, or the lowest priority element is always at the root of a min-heap, so it can be quickly retrieved.
