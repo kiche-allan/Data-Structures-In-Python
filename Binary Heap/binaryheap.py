@@ -9,5 +9,6 @@ def peekToHeap(rootNode):
     if not rootNode:
         return
     else:
-        return rootNode.customiList[1]
+        return rootNode.customList[1]
 newBinaryHeap = Heap(5)
+print(sizeofHeap(newBinaryHeap))
