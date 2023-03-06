@@ -14,3 +14,5 @@ A binary heap is a binary tree data structure that satisfies the heap property. 
 Binary heaps are commonly used to implement priority queues, which allow efficient insertion and deletion of elements in a dynamically changing set. The heap property guarantees that the highest priority element is always at the root of a max-heap, or the lowest priority element is always at the root of a min-heap, so it can be quickly retrieved.
 
 Binary heaps are typically implemented as arrays, where the children of a node at index i are at indices 2i+1 and 2i+2, and the parent of a node at index i is at index floor((i-1)/2). This allows the heap to be efficiently stored in memory and provides constant-time access to the root node.
+
+There are two types of binary heaps: max-heap and min-heap. In a max-heap, the value of each parent node is greater than or equal to the value of its children, while in a min-heap, the value of each parent node is less than or equal to the value of its children.
