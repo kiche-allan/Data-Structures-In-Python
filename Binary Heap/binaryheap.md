@@ -16,3 +16,16 @@ Binary heaps are commonly used to implement priority queues, which allow efficie
 Binary heaps are typically implemented as arrays, where the children of a node at index i are at indices 2i+1 and 2i+2, and the parent of a node at index i is at index floor((i-1)/2). This allows the heap to be efficiently stored in memory and provides constant-time access to the root node.
 
 There are two types of binary heaps: max-heap and min-heap. In a max-heap, the value of each parent node is greater than or equal to the value of its children, while in a min-heap, the value of each parent node is less than or equal to the value of its children.
+
+
+Heapify(array, size, i)
+    set i as largest
+    leftChild = 2i + 1
+    rightChild = 2i + 2
+
+    if leftChild > array[largest]
+        set leftChildIndex as largest
+    if rightChild > array[largest]
+        set rightChildIndex as largest
+
+    swap array[i] and array[largest]
