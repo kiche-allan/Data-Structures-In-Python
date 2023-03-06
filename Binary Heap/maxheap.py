@@ -30,9 +30,12 @@ class MaxHeap:
         if r < len(self, heap) and self.heap[r] > self.heap[largest]:
             largest = r
             
-        if largest ! = i:
+        if largest != i:
             self.swap(i, largest)
-            self.max_heapify(largestheap8)
+            self.max_heapify(largest)
+    def extract_max(self):
+        if len(self.heap) == 0:
+            return None
             
         
         
