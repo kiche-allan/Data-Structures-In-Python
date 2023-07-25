@@ -1,0 +1,72 @@
+{
+	"name": "vscode-styled-components",
+	"displayName": "vscode-styled-components",
+	"description": "Syntax highlighting for styled-components",
+	"version": "0.2.2",
+	"publisher": "mf",
+	"icon": "logo.png",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/makeflow/vscode-styled-components.git"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"scripts": {
+		"format": "prettier --write '**/*.{js,jsx,md,json,css}'"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "source.css.styled",
+				"aliases": [
+					"CSS (Styled Components)"
+				],
+				"configuration": "./css.styled.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "source.css.styled",
+				"scopeName": "source.css.styled",
+				"path": "./syntaxes/css.styled.json"
+			},
+			{
+				"injectTo": [
+					"source.js",
+					"source.ts",
+					"source.jsx",
+					"source.js.jsx",
+					"source.tsx",
+					"source.vue"
+				],
+				"scopeName": "styled",
+				"path": "./syntaxes/styled-components.json",
+				"embeddedLanguages": {
+					"source.css.scss": "css",
+					"meta.embedded.line.ts": "typescript"
+				}
+			}
+		],
+		"typescriptServerPlugins": []
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"prettier": "^1.14.3",
+		"prettier-cli": "^0.1.0"
+	},
+	"__metadata": {
+		"id": "4615b1c9-eb2b-4966-bb21-69919a60c660",
+		"publisherId": "2c001e0d-7780-4d75-8e13-ff8e857ea9e6",
+		"publisherDisplayName": "Makeflow",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1689660259722,
+		"preRelease": false
+	}
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"NullNotifier.js","sourceRoot":"","sources":["../../../../server/service/notifier/NullNotifier.ts"],"names":[],"mappings":";;AAEA;;;;;GAKG;AACH,MAAM,YAAY;IACd;;OAEG;IACI,KAAK,CAAC,OAAe;QACxB,OAAO,IAAI,CAAC;IAChB,CAAC;CACJ;AAED,kBAAe,YAAY,CAAC"}

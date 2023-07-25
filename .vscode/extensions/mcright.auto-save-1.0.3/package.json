@@ -1,0 +1,50 @@
+{
+	"name": "auto-save",
+	"displayName": "Auto-Save on Window Change",
+	"description": "Auto-Save files by switching between windows.",
+	"version": "1.0.3",
+	"publisher": "mcright",
+	"engines": {
+		"vscode": "^1.34.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.autoSave",
+				"title": "Autosaving on window change"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/McRight/Auto-Save-VSCode"
+	},
+	"__metadata": {
+		"id": "ec48f994-2c5c-4341-a456-9a744a6a4723",
+		"publisherId": "61319742-7316-4875-88af-56cde02ed860",
+		"publisherDisplayName": "Yurii Zaporozhchenko",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1689660259606,
+		"preRelease": false
+	}
+}

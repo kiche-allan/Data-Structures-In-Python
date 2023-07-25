@@ -1,0 +1,38 @@
+{
+	"name": "Theme-Laravel",
+	"displayName": "Laravel Theme",
+	"description": "Laravel Theme ported from the Laravel TextMate Theme",
+	"version": "0.0.5",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/gerane/VSCodeThemes/blob/master/gerane.Theme-Laravel/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gerane/VSCodeThemes.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Laravel",
+				"path": "./themes/Laravel.tmTheme",
+				"uiTheme": "vs-dark"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "39ddf184-17f0-49b2-b625-d4b4cbcd44a1",
+		"publisherId": "a5c25faf-bf60-4941-81b9-9a852b96c5fb",
+		"publisherDisplayName": "gerane",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1689660259661,
+		"preRelease": false
+	}
+}

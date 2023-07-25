@@ -1,0 +1,119 @@
+{
+	"name": "styled-components-extractor",
+	"displayName": "Styled-Components Extractor",
+	"description": "Generate styled-components from JSX tags. A faster styled-component workflow.",
+	"version": "0.1.1",
+	"publisher": "FallenMax",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"styled-components",
+		"extractor",
+		"snippet"
+	],
+	"activationEvents": [
+		"onCommand:styledComponentsExtractor.extract",
+		"onCommand:styledComponentsExtractor.extractExported"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/FallenMax/styled-components-extractor"
+	},
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "styledComponentsExtractor.extractToClipboard",
+				"title": "Extract styled-components to clipboard"
+			},
+			{
+				"command": "styledComponentsExtractor.extractExportedToClipboard",
+				"title": "Extract exported styled-components to clipboard"
+			},
+			{
+				"command": "styledComponentsExtractor.extractToSameFile",
+				"title": "Extract styled-components to the same file"
+			},
+			{
+				"command": "styledComponentsExtractor.extractToSeparateFile",
+				"title": "Extract exported styled-components to a separate file"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Styled-Components Extractor configuration",
+			"properties": {
+				"styledComponentsExtractor.separateFile.advanced.inputFileRegex": {
+					"type": "string",
+					"default": "",
+					"markdownDescription": "A regex pattern used to capture parts of the input file's name when extracting to a separate file. The pattern is matched against the file's name excluding the extension. The contents of the regex's capture groups can be referenced in the output file name as `$1`, `$2`, etc. Can be left blank if not needed.",
+					"order": 3
+				},
+				"styledComponentsExtractor.separateFile.outputFile": {
+					"type": "string",
+					"default": "$name.styles",
+					"markdownDescription": "The name of the file, excluding the extension, to place extracted components. You can use `$name` to reference the name of the input file, excluding its extension. If `#styledComponentsExtractor.separateFile.advanced.inputFileRegex#` is provided, you can also use `$1`, `$2`.",
+					"order": 2
+				},
+				"styledComponentsExtractor.addImportStatement": {
+					"type": "boolean",
+					"default": "true",
+					"markdownDescription": "Add `import styled from 'styled-component'` statement if variable `styled` is unbound. Only applies when extracting to clipboard.",
+					"order": 1
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile && npm run test",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "jest",
+		"test:watch": "jest --watch"
+	},
+	"devDependencies": {
+		"@types/babel__traverse": "^7.18.3",
+		"@types/jest": "^29.2.4",
+		"@typescript-eslint/eslint-plugin": "^5.47.1",
+		"@typescript-eslint/parser": "^5.47.1",
+		"eslint": "^8.30.0",
+		"jest": "^29.3.1",
+		"ts-jest": "^29.0.3",
+		"typescript": "^4.9.4",
+		"vscode": "^1.1.29"
+	},
+	"dependencies": {
+		"@babel/parser": "^7.20.7",
+		"@babel/traverse": "^7.20.10"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.tsx?$": "ts-jest"
+		},
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js",
+			"jsx",
+			"json",
+			"node"
+		]
+	},
+	"icon": "images/logo.png",
+	"__metadata": {
+		"id": "868ea82a-fb12-4d6c-aaec-34b51bfebfa8",
+		"publisherId": "9397af6d-25d3-433c-8d33-40031231ba67",
+		"publisherDisplayName": "FallenMax",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1689660259739,
+		"preRelease": false
+	}
+}

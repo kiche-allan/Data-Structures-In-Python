@@ -1,0 +1,1 @@
+{"version":3,"file":"NullNotifierFactory.js","sourceRoot":"","sources":["../../../server/factory/NullNotifierFactory.ts"],"names":[],"mappings":";;AAEA,mEAA4D;AAG5D;;;;;;;GAOG;AACH,MAAM,mBAAmB;IACrB;;;;;OAKG;IACI,MAAM;QACT,OAAO,IAAI,sBAAY,EAAE,CAAC;IAC9B,CAAC;IAED;;;;;;OAMG;IACI,aAAa,CAAC,UAAuB;QACxC,OAAO;IACX,CAAC;CACJ;AAED,kBAAe,mBAAmB,CAAC"}
